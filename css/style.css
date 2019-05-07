@@ -5,6 +5,10 @@
     font-family: 'Gilroy', sans-serif;
 }
 
+body {
+    padding-bottom: 1000px;
+}
+
 a {
     text-decoration: none;
 }
@@ -130,7 +134,7 @@ textarea {
 }
 
 .header-hero-logo {
-    margin-bottom: 130px;
+    margin-bottom: 195px;
 }
 
 .header-hero-logo h1 {
@@ -165,9 +169,22 @@ textarea {
     right: 0;
 }
 
+.header-bottom-left:after {
+    content: '';
+    display: block;
+    background: #ef3541;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
+    z-index: 5;
+}
+
 .header-left {
     width: 50%;
-    height: 100vh;
+    height: calc(100vh + 65px);
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
@@ -175,25 +192,50 @@ textarea {
     z-index: 3;
 }
 
-.header-bottom-right {
+#header-bottom-right {
     padding-left: 27%;
-    background-image: url('../images/backgrounds/header-right.jpg');
     background-size: cover;
     background-position: center;
     height: calc(100vh - 130px);
+    padding-top: 50px;
+    position: relative;
+}
+
+.header-hero-img1 {
+    background-image: url('../images/backgrounds/header-right.jpg');
+}
+
+.header-hero-img2 {
+    background-image: url('../images/backgrounds/header-right-2.jpg');
 }
 
 .header-actions {
-    max-width: 347px;
+    max-width: 360px;
     width: 100%;
 }
 
-.header-top-right .container{
+.header-actions * {
+    color: #2f2f2f;
+}
+
+.header-actions a {
+    font-weight: 700;
+}
+
+.header-actions a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.header-top-right .container {
     display: flex;
     width: 100%;
     justify-content: flex-end;
     max-width: 600px;
 
+}
+
+.header-search {
+    margin-bottom: 10px;
 }
 
 .header-search form {
@@ -218,11 +260,352 @@ textarea {
     font-size: 18px;
 }
 
-.header-search input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
-.header-search input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+.header-search input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.header-search input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
 
 /* clears the 'X' from Chrome */
 .header-search input[type="search"]::-webkit-search-decoration,
 .header-search input[type="search"]::-webkit-search-cancel-button,
 .header-search input[type="search"]::-webkit-search-results-button,
-.header-search input[type="search"]::-webkit-search-results-decoration { display: none; }
+.header-search input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.header-infoblock {
+    width: 500px;
+    height: 100%;
+    background-image: linear-gradient(to right, #080808, #131313, #1b1b1b, #222222, #2a2a2a);
+    padding: 50px;
+    padding-bottom: 0;
+    position: relative;
+    margin: auto;
+}
+
+.header-infoblock-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-top: 5px solid #000;
+    border-right: 8px solid #c3c0ca;
+    border-left: 8px solid #c3c0ca;
+    margin: auto;
+    background-image: url('../images/backgrounds/header-infoblock-shapes.png');
+    background-size: 100%;
+    background-position: center 150%;
+    background-repeat: no-repeat;
+}
+
+.header-infoblock-square-1 {
+    border: 1px solid #222727;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.header-infoblock-square-2 {
+    border: 1px solid #222727;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+}
+
+.header-infoblock-square-3 {
+    border: 1px solid #222727;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.header-infoblock-squares {
+    position: absolute;
+    display: flex;
+    margin: auto;
+    top: 15px;
+    align-items: center;
+    left: calc(50% - 42px);
+}
+
+.header-info-block-logo {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    margin: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-infoblock-menu {
+    padding: 15px;
+}
+
+.header-infoblock-menu li a {
+    background: none;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.header-infoblock-menu li a:hover {
+    background: #ef3642;
+    color: #fff;
+
+}
+
+.header-infoblock-menu li a:hover .text-logo div {
+    color: #000;
+}
+
+.header-infoblock-menu li a.active {
+    background: #ef3642;
+    color: #fff;
+}
+
+.header-infoblock-menu li a span {
+    font-size: 12px;
+    width: 24px;
+    display: block;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+.text-logo {
+    text-transform: uppercase;
+    font-weight: 900;
+    display: flex;
+    font-size: 16px;
+}
+
+.text-logo div {
+    color: #ef3541;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.header-infoblock .text-logo {
+    margin-right: 5px;
+}
+
+
+.gray-line {
+    width: 100%;
+    height: 1px;
+    background: #e4e4e4;
+}
+
+.about {
+    padding-top: 110px;
+    background-color: #f0f0f0;
+    /* background-image: url('../images/backgrounds/uzbekistan-shapes.png'); */
+    background-repeat: no-repeat;
+    min-height: 1200px;
+    background-position: 100%;
+    position: relative;
+}
+
+.about .gray-line {
+    margin-bottom: 50px;
+}
+
+.about-background {
+    position: absolute;
+    right: -424px;
+    top: -150px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 380px;
+    z-index: 2;
+
+}
+
+.section-title-right {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-title-right span {
+    color: #ef3642;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.section-title-right div {
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin-left: 10px;
+}
+
+.about-intro-text {
+    padding: 50px 15px;
+}
+
+.about-intro-text p {
+    color: #342829;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-intro-text p span {
+    text-transform: uppercase;
+    color: #e92b38;
+    font-weight: 900;
+}
+
+
+.about-round-card h4 {
+    color: #303030;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.about-round-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 165px;
+    max-width: 165px;
+    height: 165px;
+    /* background-color: #f0f0f0; */
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.about-round {
+    min-width: 500px;
+    max-width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 70px;
+    /* background-image: url('../images/elements/round-shapes.png');
+    background-size: 100%;
+    background-repeat: no-repeat; */
+}
+
+.about-round-red-line {
+    min-width: 500px;
+    max-width: 500px;
+    height: 500px;
+    /* border: 3px solid #ef3541;
+    border-radius: 50%; */
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+
+.about-round-card:nth-of-type(1) {
+    left: calc(50% - 82px);
+    top: -75px;
+}
+
+.about-round-card:nth-of-type(2) {
+    right: -40px;
+    top: 50px;
+}
+
+.about-round-card:nth-of-type(3) {
+    right: -40px;
+    bottom: 50px;
+}
+
+.about-round-card:nth-of-type(4) {
+    left: calc(50% - 82px);
+    bottom: -82px;
+}
+
+.about-round-card:nth-of-type(5) {
+    left: -40px;
+    top: 50px;
+}
+
+.about-round-card:nth-of-type(6) {
+    left: -40px;
+    bottom: 50px;
+}
+
+.about-logo {
+    position: relative;
+    z-index: 6;
+}
+
+.about-text-company {
+    font-size: 220px;
+    color: #e4e4e4;
+    font-weight: 900;
+    position: absolute;
+    z-index: 0;
+    bottom: 110px;
+    left: -60px;
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .header-infoblock-menu {
+        padding: 15px;
+    }
+
+    .header-infoblock-menu li a {
+        color: #000;
+        font-size: 24px;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 5px 10px;
+        margin: 20px 0;
+    }
+
+    .header-infoblock-menu li a span {
+        font-size: 16px;
+        width: 24px;
+        display: block;
+        padding-bottom: 3px;
+    }
+
+
+    .text-logo {
+
+        font-size: 24px;
+    }
+
+    .text-logo div {
+        font-size: 24px;
+    }
+
+    #header-bottom-right {
+        padding-top: 100px;
+    }
+}
