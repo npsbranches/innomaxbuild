@@ -45,14 +45,73 @@ textarea {
     padding: 0 15px;
 }
 
+.section-title-right {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-title-right span {
+    color: #ef3642;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.section-title-right div {
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin-left: 10px;
+}
+
+.title-with-background-wrapper {
+    position: relative;
+    width: max-content;
+}
+
+.title-with-background {
+    background: #f3f1f1;
+    transform: skewX(-40deg);
+    padding: 27px 70px;
+    width: max-content;
+    position: relative;
+    z-index: 2;
+}
+
+.title-with-background-wrapper:after {
+    content: "";
+    height: 75px;
+    width: 200px;
+    display: block;
+    transform: skewX(-40deg);
+    background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    right: 10px;
+}
+
+.title-with-background h3 {
+    transform: skewX(40deg);
+    display: block;
+    font-size: 26px;
+    font-weight: 900;
+    color: #2d2e2f;
+    text-transform: uppercase;
+}
+
+.title-with-background span {
+    color: #e92b38;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .header {
     display: flex;
     height: 100vh;
 }
-
-
 
 .header-left-background {
     position: absolute;
@@ -129,7 +188,6 @@ textarea {
 .header-bottom-left {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding: 15px;
 }
 
@@ -163,8 +221,6 @@ textarea {
 .header-right {
     width: 70%;
     height: 100vh;
-    /* -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%); */
     position: absolute;
     right: 0;
 }
@@ -188,7 +244,6 @@ textarea {
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-    /* transform: translateX(15%); */
     z-index: 3;
 }
 
@@ -231,7 +286,6 @@ textarea {
     width: 100%;
     justify-content: flex-end;
     max-width: 600px;
-
 }
 
 .header-search {
@@ -401,6 +455,7 @@ textarea {
     margin-right: 5px;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .gray-line {
     width: 100%;
@@ -411,11 +466,10 @@ textarea {
 .about {
     padding-top: 110px;
     background-color: #f0f0f0;
-    /* background-image: url('../images/backgrounds/uzbekistan-shapes.png'); */
     background-repeat: no-repeat;
-    min-height: 1200px;
     background-position: 100%;
     position: relative;
+    padding-bottom: 300px;
 }
 
 .about .gray-line {
@@ -431,29 +485,6 @@ textarea {
     right: 0;
     top: 380px;
     z-index: 2;
-
-}
-
-.section-title-right {
-    display: flex;
-    font-size: 16px;
-    font-weight: 500;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.section-title-right span {
-    color: #ef3642;
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 5px;
-}
-
-.section-title-right div {
-    width: 100px;
-    height: 1px;
-    background: #000;
-    margin-left: 10px;
 }
 
 .about-intro-text {
@@ -562,15 +593,186 @@ textarea {
 }
 
 .about-text-company {
-    font-size: 220px;
-    color: #e4e4e4;
-    font-weight: 900;
+    font-size: 255px;
+    color: #f0f0f0;
+    font-weight: 700;
     position: absolute;
     z-index: 0;
-    bottom: 110px;
+    bottom: 250px;
     left: -60px;
     
 }
+
+.about-numbers {
+    width: 100%;
+    height: 520px;
+    background: #333;
+    clip-path: polygon(50% 50%, 100% 0, 100% 50%, 50% 100%, 0 50%, 0 0);
+    position: absolute;
+    left: 0;
+    bottom: -260px;
+    background-image: url('../images/backgrounds/numbers.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.about-card {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.about-card:first-child {
+    margin-right: 300px;
+    margin-bottom: 300px;
+}
+
+.about-card:last-child {
+    margin-left: 300px;
+    margin-bottom: 300px;
+}
+
+.about-numbers-title {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 26px;
+    transform: translateY(150px);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.counter-card {
+    padding: 0 40px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.counter-card:nth-child(2) {
+    transform: translateY(110px);
+}
+
+.counter-number {
+    font-size: 78px;
+    font-weight: 800;
+    color: #fff;
+    opacity: 0;
+    font-family: 'Montserrat';
+}
+
+.counter-card span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.counter-number:after {
+    content: "+";
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * ADVANTAGES * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.advantages {
+    margin-top: 300px;
+    position: relative;
+}
+
+.advantages .section-title-right {
+    position: relative;
+    z-index: 2;
+}
+
+
+.advantages .title-with-background {
+    padding-right: 150px;
+}
+
+.advantages-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.advantages-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 25px;
+    /* padding-bottom: 0; */
+    flex-basis: 20%;
+    height: 200px;
+}
+
+.advantages-photo {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.advantages-card h4 {
+    font-size: 22px;
+    font-weight: 900;
+    color: #2d2e2f;
+    margin-top: 15px;
+}
+
+.advantages-card span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * CATEGORIES SHOWCASE* * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.categories-showcase {
+    position: relative;
+    padding-top: 100px;
+}
+
+.showcase-text-company {
+    font-size: 255px;
+    color: #f0f0f0;
+    font-weight: 700;
+    position: absolute;
+    z-index: 0;
+    top: -50px;
+    right: 0;
+}
+
+.categories-showcase .section-title-right {
+    position: relative;
+    z-index: 5;
+}
+
+
+.categories-showcase .title-with-background-wrapper {
+    margin-left: auto;
+    margin-top: 30px;
+}
+.categories-showcase .title-with-background-wrapper:after {
+    right: -30px;
+    top: -10px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (min-width: 1600px) {
     .header-infoblock-menu {
