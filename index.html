@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader-gif">
+            <img src="images/=loading.gif" alt="">
+        </div>
+    </div>
     <header class="header">
         <div class="header-left">
             <div class="header-left-background">
@@ -40,8 +46,8 @@
             <div class="header-bottom-left">
                 <div class="container">
                     <div class="header-hero-logo">
-                        <h1>Innomax</h1>
-                        <span>Интерактивное оборудование</span>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Innomax</h1>
+                        <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Интерактивное оборудование</span>
                     </div>
                 </div>
             </div>
@@ -67,7 +73,7 @@
                 </div>
             </div>
             <div class="header-bottom-right" id="header-bottom-right">
-                <div class="header-infoblock">
+                <div class="header-infoblock" data-aos="fade-up" data-aos-duration="1000">
                     <div class="header-infoblock-squares">
                         <div class="header-infoblock-square-1"></div>
                         <div class="header-infoblock-square-2"></div>
@@ -100,7 +106,7 @@
     <section class="about">
         <div class="container">
             <div class="gray-line"></div>
-            <h3 class="section-title-right"><span>информация</span> о компании <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000"><span>информация</span> о компании <div></div>
             </h3>
             <div class="about-intro-text" id="about-intro-text">
                 <p><span>OOO "INNOMAX TECHNOLOGY"</span> является прямым поставщиком информационных
@@ -160,7 +166,7 @@
         </div>
 
         <h2 class="about-numbers-title" id="innomax-in-numbers">INNOMAX в цифрах:</h2>
-        <section class="about-numbers">
+        <section class="about-numbers"  data-aos="fade-down" data-aos-duration="1000">
             <div class="container">
 
                 <div class="counter" id="counter">
@@ -183,9 +189,9 @@
 
     <section class="advantages">
         <div class="container">
-            <h3 class="section-title-right"><span>наши</span> преимущества <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000"><span>наши</span> преимущества <div></div>
             </h3>
-            <div class="title-with-background-wrapper">
+            <div class="title-with-background-wrapper" data-aos="fade-right" data-aos-duration="1000">
                 <div class="title-with-background">
                     <h3>У НАС ЛУЧШЕЕ ТЕХНИЧЕСКОЕ <br> ОБСЛУЖИВАНИЕ В УЗБЕКИСТАНЕ!</h3>
                 </div>
@@ -236,9 +242,9 @@
             INNO
         </span>
         <div class="container">
-            <h3 class="section-title-right"><span>категории</span> товаров innomax <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000"><span>категории</span> товаров innomax <div></div>
             </h3>
-            <div class="title-with-background-wrapper">
+            <div class="title-with-background-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                 <div class="title-with-background">
                     <h3>Категории <span>товаров</span>:</h3>
                 </div>
@@ -350,7 +356,7 @@
 
         </div>
         <div class="container">
-            <h3 class="section-title-right"><span>продукция</span> компании innomax <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000"><span>продукция</span> компании innomax <div></div>
             </h3>
             <div class="showcase-cards">
                 <a href="" class="showcase-card right">
@@ -458,7 +464,7 @@
 
     <section class="clients" id="clients">
         <div class="container">
-            <h3 class="section-title-right"><span>клиенты</span> innomax <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000"><span>клиенты</span> innomax <div></div>
             </h3>
             <div class="clients-slider owl-carousel owl-theme">
                 <div><img src="images/logos/goodzone.png" alt=""></div>
@@ -483,7 +489,7 @@
         </div>
         <div class="feedback-right">
             <div class="container">
-                <h3 class="section-title-right"><span>обратная</span> связь <div></div>
+                <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><span>обратная</span> связь <div></div>
                 </h3>
                 <h3>Удобнее поговорить?</h3>
                 <div class="feedback-right-card">
@@ -503,7 +509,7 @@
     </section>
     <section class="partners">
         <div class="container">
-            <h3 class="section-title-right"><span>партнеры</span> innomax <div></div>
+            <h3 class="section-title-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><span>партнеры</span> innomax <div></div>
             </h3>
 
             <div class="partners-cards">
@@ -595,7 +601,11 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.spincrement.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

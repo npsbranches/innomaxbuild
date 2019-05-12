@@ -1,10 +1,20 @@
+/*
+ **  Прелоадер
+ */
+
+
+window.onload = function() {
+    $('.preloader').fadeOut();
+    $('body').addClass('overflow');
+}
+
 $(function() {
     var images = [{
             class: "header-hero-img1", // Класс
-            timeout: 2000 // Задержка для класса
+            timeout: 5000 // Задержка для класса
         }, {
             class: "header-hero-img2",
-            timeout: 2000
+            timeout: 5000
         }],
         i = 0,
         timeout;
@@ -98,3 +108,47 @@ menuItemHasChildren.each(function () {
 //     $('.menu-item-has-children a:first i').removeClass('rotate');
 //     e.stopPropagation();
 // });
+$(function(){
+    var $gallery = $('.single-product-photos a').simpleLightbox();
+
+    $gallery.on('show.simplelightbox', function(){
+        console.log('Requested for showing');
+    })
+    .on('shown.simplelightbox', function(){
+        console.log('Shown');
+    })
+    .on('close.simplelightbox', function(){
+        console.log('Requested for closing');
+    })
+    .on('closed.simplelightbox', function(){
+        console.log('Closed');
+    })
+    .on('change.simplelightbox', function(){
+        console.log('Requested for change');
+    })
+    .on('next.simplelightbox', function(){
+        console.log('Requested for next');
+    })
+    .on('prev.simplelightbox', function(){
+        console.log('Requested for prev');
+    })
+    .on('nextImageLoaded.simplelightbox', function(){
+        console.log('Next image loaded');
+    })
+    .on('prevImageLoaded.simplelightbox', function(){
+        console.log('Prev image loaded');
+    })
+    .on('changed.simplelightbox', function(){
+        console.log('Image changed');
+    })
+    .on('nextDone.simplelightbox', function(){
+        console.log('Image changed to next');
+    })
+    .on('prevDone.simplelightbox', function(){
+        console.log('Image changed to prev');
+    })
+    .on('error.simplelightbox', function(e){
+        console.log('No image found, go to the next/prev');
+        console.log(e);
+    });
+});
