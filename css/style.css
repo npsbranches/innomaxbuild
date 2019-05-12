@@ -1547,6 +1547,15 @@ a.toggle {
     border: 1px solid #e4e4e4;
 }
 
+.catalog-red-header {
+
+    background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
+
+    height: 45px;
+    width: 100%;
+
+}
+
 .catalog-products {
     border-left: 1px solid #e4e4e4;
     border-top: 1px solid #e4e4e4;
@@ -1784,7 +1793,7 @@ a.toggle {
 .contacts-card {
     display: flex;
     align-items: center;
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .contacts-card * {
@@ -1836,7 +1845,7 @@ a.toggle {
     background-size: cover;
     background-color: #f1f3f5;
     padding: 30px 0;
-    
+
 }
 
 
@@ -1859,7 +1868,8 @@ a.toggle {
 .contacts-footer-banner {
     margin-bottom: 20px;
 }
-.contacts-footer-banner img{
+
+.contacts-footer-banner img {
     width: 100%;
 }
 
@@ -1876,6 +1886,7 @@ a.toggle {
 .news .breadcrumbs {
     margin-bottom: 50px;
 }
+
 .news-post {
     margin-bottom: 50px;
 }
@@ -1898,6 +1909,7 @@ a.toggle {
     font-size: 18px;
     color: #064dad;
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * SINGLE POST * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .single-post-img img {
@@ -1920,6 +1932,77 @@ a.toggle {
     font-size: 18px;
     font-weight: 500;
 }
+
+.my-gallery {
+    width: 100%;
+    float: left;
+}
+
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
+
+
+.single-product-header {
+    margin: 30px;
+    border: 1px solid #d8d8d8;
+    display: flex;
+}
+
+.single-product-photos {
+    flex-basis: 50%;
+}
+
+.single-product-header-right {
+    flex-basis: 50%;
+    border-left: 1px solid #d8d8d8;
+}
+
+.single-product-titles {
+    background-image: url('../images/backgrounds/single-title-bg.jpg');
+    background-size: cover;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.single-product-titles span,
+.single-product-titles h4 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.single-product-desc {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+}
+/* 
+.pswp__img {
+    height: auto !important;
+    width: auto !important;
+  }*/
+
+  .pswp__bg {
+  background: #fff;
+  } 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * MEDIA * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 @media screen and (min-width: 1600px) {
