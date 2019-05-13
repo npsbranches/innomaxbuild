@@ -74,8 +74,12 @@ iframe {
 }
 
 .preloader-gif {
-    width: 35px;
-    height: 35px;
+    width: 75px;
+    height: 75px;
+    -webkit-animation:spin 2s linear infinite;
+-moz-animation:spin 2s linear infinite;
+animation:spin 2s linear infinite;
+
 }
 
 .preloader-gif img {
@@ -84,6 +88,11 @@ iframe {
     -o-object-fit: contain;
        object-fit: contain;
 }
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -359,10 +368,31 @@ iframe {
     max-width: 600px;
 }
 
+
+.language-switcher {
+    width: 120px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
 .header-search {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
+.language-switcher a {
+    font-size: 12px;
+    padding: 5px;
+}
+.language-switcher a.active {
+    display: flex;
+    background: #2f2f2f;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+}
 .header-search form {
     display: flex;
     padding: 5px 15px;
@@ -370,6 +400,9 @@ iframe {
     border: 1px solid #505657;
     border-radius: 1px;
     justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 30px;
 }
 
 .header-search input {
@@ -526,6 +559,49 @@ iframe {
     margin-right: 5px;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER FIXED * * * * * * * * * * * * * * * * * * * * * * * * * */
+.header-fixed {
+    position: fixed;
+    top: -95px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    background: #333;
+}
+
+.header-fixed.visible {
+    top: 0;
+}
+
+.header-fixed .header-left {
+    width: 70%;
+}
+
+.header-fixed .header-top-left .container {
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+}
+
+
+.header-fixed .header-top-left {
+    height: 70px;
+}
+
+.header-fixed .header-top-right {
+    height: 70px;
+    padding-left: 7%;
+}
+
+.header-fixed .header-search {
+    margin-bottom: 0;
+}
+
+.header-fixed .header-actions {
+    max-width: 200px;
+}
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .gray-line {

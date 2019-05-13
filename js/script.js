@@ -8,6 +8,16 @@ window.onload = function() {
     $('body').addClass('overflow');
 }
 
+$(window).scroll(function () {
+    var the_top = $(document).scrollTop();
+    if (the_top > 130) {
+        $('.header-fixed').addClass('visible');
+    } else {
+        $('.header-fixed').removeClass('visible');
+    }
+});
+
+
 $(function() {
     var images = [{
             class: "header-hero-img1", // Класс
