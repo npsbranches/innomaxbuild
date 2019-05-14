@@ -297,12 +297,14 @@ iframe {
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+    line-height: 55px;
 }
 
 .header-hero-logo span {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     color: #fff;
+    padding-left: 212px;
 }
 
 .header-top-right {
@@ -820,6 +822,7 @@ iframe {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    /* padding-top: 40px; */
 }
 
 .counter-card {
@@ -2303,4 +2306,15 @@ a.toggle {
     #header-bottom-right {
         padding-top: 100px;
     }
+}
+@media screen and (min-width: 1400px) {
+    .counter {
+        padding-top: 50px;
+    }
+
+    
+    .counter-card:nth-child(2) {
+        transform: translateY(80px);
+    }
+    
 }
