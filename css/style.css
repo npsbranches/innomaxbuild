@@ -1022,11 +1022,8 @@ iframe {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 47;
     margin-top: 70px;
-    /* background-image: url('../images/elements/round-shapes.png');
-    background-size: 100%;
-    background-repeat: no-repeat; */
 }
 
 .about-round-red-line {
@@ -1040,6 +1037,10 @@ iframe {
     left: 0;
     top: 0;
     z-index: 0;
+}
+
+.about-round-red-line img {
+    width: 100%;
 }
 
 
@@ -3022,7 +3023,74 @@ a.toggle {
 }
 
 @media screen and (max-width: 640px) {
-    
+
+    .about-round {
+        min-width: 400px;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .about-round-red-line {
+        min-width: 400px;
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .about-round-card {
+        min-width: 105px;
+        max-width: 105px;
+        height: 105px;
+        padding: 0;
+    }
+
+    .about-round-card img {
+        width: 40px;
+        object-fit: contain;
+
+    }
+
+    .about-round-card h4 {
+        font-size: 14px;
+    }
+
+    .about-round-card:nth-of-type(1) {
+        left: calc(50% - 51px);
+        top: -60px;
+    }
+
+    .about-round-card:nth-of-type(2) {
+        right: -26px;
+        top: 50px;
+    }
+
+    .about-round-card:nth-of-type(3) {
+        right: -23px;
+        bottom: 50px;
+    }
+
+    .about-round-card:nth-of-type(4) {
+        left: calc(50% - 52px);
+        bottom: -42px;
+    }
+
+    .about-round-card:nth-of-type(6) {
+        left: -18px;
+        bottom: 50px;
+    }
+
+    .about-round-card:nth-of-type(5) {
+        left: -28px;
+        top: 50px;
+    }
+
+    .about-logo {
+        width: 140px;
+    }
+
+    .about-logo img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -3037,6 +3105,13 @@ a.toggle {
     .about-intro-text p {
         font-size: 16px;
     }
+
+    .about-round {
+        min-width: 400px;
+        max-width: 400px;
+        height: 400px;
+    }
+
 
 }
 
