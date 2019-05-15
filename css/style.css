@@ -3200,4 +3200,65 @@ a.toggle {
         -ms-flex-pack: center;
         justify-content: center;
     }
+
+    .about-round {
+        min-width: 300px;
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .about-round-red-line {
+        min-width: 300px;
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .about-logo {
+        width: 85px;
+    }
+
+    .about-round-card img {
+        width: 30px;
+        object-fit: contain;
+    }
+
+    .about-round-card h4 {
+        font-size: 12px;
+    }
+
+    .about-round-card {
+        min-width: 80px;
+        max-width: 80px;
+        height: 80px;
+        background: red;
+    }
+
+    .about-round-card:nth-of-type(1) {
+        left: calc(50% - 40px);
+        top: -41px;
+    }
+
+    .about-round-card:nth-of-type(2) {
+        right: -15px;
+        top: 40px;
+    }
+
+    .about-round-card:nth-of-type(3) {
+        right: -15px;
+        bottom: 35px;
+    }
+
+    .about-round-card:nth-of-type(4) {
+        left: calc(50% - 40px);
+        bottom: -28px;
+    }
+    .about-round-card:nth-of-type(6) {
+        left: -10px;
+        bottom: 38px;
+    }
+
+    .about-round-card:nth-of-type(5) {
+        left: -15px;
+        top: 38px;
+    }
 }
