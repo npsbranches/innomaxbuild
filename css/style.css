@@ -2627,4 +2627,10 @@ a.toggle {
     #header-bottom-right {
         height: max-content;
     }
+
+    .language-switcher a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
