@@ -725,6 +725,10 @@ iframe {
     font-weight: 700;
 }
 
+
+.header-fixed .header-search {
+    justify-content: flex-end;
+}
 .header-mobile .header-search form {
     max-width: 400px;
 }
@@ -776,6 +780,8 @@ iframe {
 .header-mobile .btn-bars span {
     background: #fff;
 }
+
+
 
 
 
@@ -2557,4 +2563,46 @@ a.toggle {
 
 
 
+}
+
+@media screen and (max-width: 480px) {
+    .header-infoblock {
+        width: 300px;
+        padding: 25px;
+        padding-bottom: 0;
+    }
+
+    .header-infoblock-squares {
+        top: 5px;
+        left: calc(50% - 30px);
+    }
+
+    .header-infoblock-square-1 {
+        width: 10px;
+        height: 10px;
+    }
+    .header-infoblock-square-2 {
+        width: 15px;
+        height: 15px;
+    }
+    .header-infoblock-square-3 {
+        width: 10px;
+        height: 10px;
+    }
+
+    .header-infoblock-menu li a {
+        font-size: 14px;
+    }
+
+    .header-infoblock .text-logo {
+        font-size: 14px;
+    }
+    .header-infoblock .text-logo div{
+        font-size: 14px;
+    }
+
+    .header-infoblock-menu li a {
+        display: flex;
+        align-items: center;
+    }
 }
