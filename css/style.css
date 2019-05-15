@@ -778,6 +778,8 @@ iframe {
 }
 
 
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .gray-line {
@@ -2547,6 +2549,10 @@ a.toggle {
 
     .header-fixed {
         top: 0;
+    }
+
+    #header-bottom-right {
+        padding-left: 0;
     }
 
 
