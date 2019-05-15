@@ -2568,12 +2568,12 @@ a.toggle {
 @media screen and (max-width: 480px) {
     .header-infoblock {
         width: 300px;
-        padding: 25px;
+        padding: 30px;
         padding-bottom: 0;
     }
 
     .header-infoblock-squares {
-        top: 5px;
+        top: 10px;
         left: calc(50% - 30px);
     }
 
@@ -2622,5 +2622,9 @@ a.toggle {
 
     .header-hero-logo span {
         padding-left: 150px;
+    }
+
+    #header-bottom-right {
+        height: max-content;
     }
 }
