@@ -3104,6 +3104,7 @@ a.toggle {
 
     .about-intro-text p {
         font-size: 16px;
+        text-align: justify;
     }
 
     .about-round {
