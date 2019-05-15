@@ -686,7 +686,7 @@ iframe {
 
 .header-mobile {
     z-index: 1999;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #2e2e30;
@@ -774,7 +774,7 @@ iframe {
 .header-mobile .btn-bars {
     position: relative;
     position: fixed;
-    right: 65px;
+    right: 15px;
     top: 32px;
 }
 .header-mobile .btn-bars span {
@@ -2604,5 +2604,23 @@ a.toggle {
     .header-infoblock-menu li a {
         display: flex;
         align-items: center;
+    }
+
+    .header-fixed .language-switcher {
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+
+    .header-fixed .header-logo a {
+        width: auto;
+    }
+
+    .header-hero-logo h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .header-hero-logo span {
+        padding-left: 150px;
     }
 }
