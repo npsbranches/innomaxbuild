@@ -3,10 +3,21 @@
  */
 
 
-window.onload = function() {
+// window.onload = function() {
+//     $('.preloader').fadeOut();
+//     $('body').addClass('overflow');
+// }
+
+$('.btn-bars').click(function () {
+    $('.btn-bars').toggleClass('active');
+    $('.header-mobile').toggleClass('active');
+    $('body').toggleClass('overflow-hidden');
+});
+
+$(document).ready(function( ) {
     $('.preloader').fadeOut();
     $('body').addClass('overflow');
-}
+})
 
 $(window).scroll(function () {
     var the_top = $(document).scrollTop();
