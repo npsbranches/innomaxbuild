@@ -3237,8 +3237,18 @@ a.toggle {
         max-width: 400px;
         height: 400px;
     }
+    .advantages .title-with-background h3 {
+        font-size: 16px;
+    }
 
+    .advantages .title-with-background-wrapper:after {
+        right: 5px;
+        height: 35px;
+    }
 
+    .advantages .title-with-background {
+        padding: 10px 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
