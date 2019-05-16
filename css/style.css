@@ -2905,17 +2905,18 @@ a.toggle {
 
 @media screen and (max-width: 1180px) {
 
-        .counter {
-            padding-bottom: 50px;
-        }
+    .counter {
+        padding-bottom: 50px;
+    }
 
-        .counter-card:nth-child(2) {
-            -webkit-transform: translateY(138px);
-            -ms-transform: translateY(138px);
-            transform: translateY(138px);
-        }
+    .counter-card:nth-child(2) {
+        -webkit-transform: translateY(138px);
+        -ms-transform: translateY(138px);
+        transform: translateY(138px);
+    }
 
 }
+
 @media screen and (max-width: 1130px) {
     /* .header-fixed .header-menu ul {
         display: none;
@@ -2940,6 +2941,7 @@ a.toggle {
     }
 
 }
+
 @media screen and (max-width: 1024px) {
     .counter {
         padding-bottom: 83px;
@@ -3054,6 +3056,7 @@ a.toggle {
 
     .about {
         padding-top: 50px;
+        padding-bottom: 260px;
     }
 
     .about .gray-line {
@@ -3074,6 +3077,22 @@ a.toggle {
         -ms-transform: translateY(111px);
         transform: translateY(111px);
     }
+
+    .advantages {
+        margin-top: 0;
+        padding-top: 70px;
+    }
+
+    .advantages .section-title-right {
+        margin-bottom: 50px;
+    }
+
+    .advantages .title-with-background h3 {
+        font-size: 20px;
+    }
+    .advantages .title-with-background {
+        padding-right: 60px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -3084,6 +3103,7 @@ a.toggle {
     .about-background img {
         width: 100%;
     }
+
     .about-numbers {
         clip-path: none;
         height: auto;
@@ -3092,6 +3112,7 @@ a.toggle {
         top: unset;
         left: unset;
     }
+
     .counter-card:nth-child(2) {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -3100,6 +3121,10 @@ a.toggle {
 
     .about-round {
         margin-bottom: 0;
+    }
+
+    .advantages-card {
+        flex-basis: 50%;
     }
 }
 
@@ -3182,12 +3207,14 @@ a.toggle {
         margin: 20px 0;
     }
 
-    .advantages {
-        margin-top: 50px;
-    } 
+
 
     .advantages .section-title-right {
         margin-bottom: 50px;
+    }
+    .advantages-card {
+        flex-basis: 100%;
+        margin-bottom: 0;
     }
 }
 
@@ -3350,6 +3377,7 @@ a.toggle {
         left: calc(50% - 40px);
         bottom: -28px;
     }
+
     .about-round-card:nth-of-type(6) {
         left: -10px;
         bottom: 38px;
