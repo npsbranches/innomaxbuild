@@ -1293,6 +1293,7 @@ iframe {
 .categories-showcase .title-with-background-wrapper {
     margin-left: auto;
     margin-top: 30px;
+    margin-right: 60px;
 }
 
 .categories-showcase .title-with-background-wrapper:after {
