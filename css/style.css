@@ -2945,6 +2945,39 @@ a.toggle {
         padding-bottom: 83px;
     }
 
+    .showcase-cards {
+        flex-direction: column;
+    }
+
+    .showcase-card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .showcase-card-bottom {
+        width: 100%;
+    }
+
+    .showcase-card-title {
+        width: 100%;
+    }
+
+    .showcase-card-description {
+        width: 50%;
+        left: 25%;
+    }
+
+    .showcase-card.right .showcase-card-title {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 97% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 97% 100%, 0% 100%);
+    }
+
+    .showcase-card.left .showcase-card-title {
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 3% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 3% 100%);
+        padding: 5px 15px 5px 50px;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
