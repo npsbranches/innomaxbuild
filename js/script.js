@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $('.preloader').delay(400).fadeOut(500);
+    $('body').addClass('overflow');
+});
+
 $('.catalog-button').click(function () {
     $('.catalog-sidebar').toggleClass('open');
     $('.sidebar-layout').toggleClass('visible');
@@ -15,9 +20,7 @@ $('.btn-bars').click(function () {
 });
 
 
-$(document).ready(function () {
-    $('.preloader').delay(400).fadeOut(500);
-    $('body').addClass('overflow');
+
 if (window.innerWidth < 576) {
 
     function removeAos() {
@@ -186,5 +189,3 @@ $(function(){
         console.log(e);
     });
 });
-
-})
