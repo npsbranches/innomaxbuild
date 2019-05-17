@@ -20,6 +20,52 @@ $('.btn-bars').click(function () {
 });
 
 
+
+$(function(){
+    var $gallery = $('.single-product-photos a').simpleLightbox();
+
+    $gallery.on('show.simplelightbox', function(){
+        console.log('Requested for showing');
+    })
+    .on('shown.simplelightbox', function(){
+        console.log('Shown');
+    })
+    .on('close.simplelightbox', function(){
+        console.log('Requested for closing');
+    })
+    .on('closed.simplelightbox', function(){
+        console.log('Closed');
+    })
+    .on('change.simplelightbox', function(){
+        console.log('Requested for change');
+    })
+    .on('next.simplelightbox', function(){
+        console.log('Requested for next');
+    })
+    .on('prev.simplelightbox', function(){
+        console.log('Requested for prev');
+    })
+    .on('nextImageLoaded.simplelightbox', function(){
+        console.log('Next image loaded');
+    })
+    .on('prevImageLoaded.simplelightbox', function(){
+        console.log('Prev image loaded');
+    })
+    .on('changed.simplelightbox', function(){
+        console.log('Image changed');
+    })
+    .on('nextDone.simplelightbox', function(){
+        console.log('Image changed to next');
+    })
+    .on('prevDone.simplelightbox', function(){
+        console.log('Image changed to prev');
+    })
+    .on('error.simplelightbox', function(e){
+        console.log('No image found, go to the next/prev');
+        console.log(e);
+    })
+});
+
 if (window.innerWidth < 576) {
 
     function removeAos() {
@@ -138,53 +184,3 @@ menuItemHasChildren.each(function () {
     $(this).find('a:first').prepend('<i class="fa fa-angle-right"></i>');
 });
 
-// $(document).click(function (e) {
-//     if ($(e.target).closest(subMenu).length || $(e.target).closest('.header-menu ul li').length) return;
-//     subMenu.removeClass('toggle');
-//     $('.menu-item-has-children a:first i').removeClass('rotate');
-//     e.stopPropagation();
-// });
-$(function(){
-    var $gallery = $('.single-product-photos a').simpleLightbox();
-
-    $gallery.on('show.simplelightbox', function(){
-        console.log('Requested for showing');
-    })
-    .on('shown.simplelightbox', function(){
-        console.log('Shown');
-    })
-    .on('close.simplelightbox', function(){
-        console.log('Requested for closing');
-    })
-    .on('closed.simplelightbox', function(){
-        console.log('Closed');
-    })
-    .on('change.simplelightbox', function(){
-        console.log('Requested for change');
-    })
-    .on('next.simplelightbox', function(){
-        console.log('Requested for next');
-    })
-    .on('prev.simplelightbox', function(){
-        console.log('Requested for prev');
-    })
-    .on('nextImageLoaded.simplelightbox', function(){
-        console.log('Next image loaded');
-    })
-    .on('prevImageLoaded.simplelightbox', function(){
-        console.log('Prev image loaded');
-    })
-    .on('changed.simplelightbox', function(){
-        console.log('Image changed');
-    })
-    .on('nextDone.simplelightbox', function(){
-        console.log('Image changed to next');
-    })
-    .on('prevDone.simplelightbox', function(){
-        console.log('Image changed to prev');
-    })
-    .on('error.simplelightbox', function(e){
-        console.log('No image found, go to the next/prev');
-        console.log(e);
-    });
-});
