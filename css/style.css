@@ -14,7 +14,7 @@ body {
 
 body.overflow {
     overflow-x: hidden;
-    overflow-y: visible;
+    /* overflow-y: visible; */
     height: auto;
 }
 
