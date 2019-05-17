@@ -7,14 +7,18 @@
     color: #262a2b;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     overflow: hidden;
     height: 100vh;
 }
 
 body.overflow {
+    overflow: visible;
     overflow-x: hidden;
-    /* overflow-y: visible; */
     height: auto;
 }
 
