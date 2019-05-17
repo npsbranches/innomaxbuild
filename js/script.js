@@ -1,3 +1,6 @@
+$(document).ready(function () {
+    $('.preloader').delay(400).fadeOut(500);
+    $('body').addClass('overflow');
 if (window.innerWidth < 576) {
 
     function removeAos() {
@@ -15,10 +18,8 @@ if (window.innerWidth < 576) {
  **  Прелоадер
  */
 
-$(document).ready(function () {
-    $('.preloader').delay(400).fadeOut(500);
-    $('body').addClass('overflow');
-  })
+    
+ 
 
 
 // window.onload = function() {
@@ -204,4 +205,6 @@ $(function(){
         console.log('No image found, go to the next/prev');
         console.log(e);
     });
-});
+})
+
+})
