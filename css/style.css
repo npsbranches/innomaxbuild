@@ -3218,7 +3218,7 @@ a.toggle {
     }
 
     .feedback-right .container {
-        padding-left: 0;
+        padding-left: 15px;
         align-items: center;
         text-align: center;
     }
@@ -3226,7 +3226,10 @@ a.toggle {
 
 @media screen and (max-width: 576px) {
     .section-title-right {
-        font-size: 16px;
+        font-size: 16px !important;
+    }
+    .feedback-right .section-title-right {
+        font-size: 16px !important;
     }
 
     .section-title-right span {
