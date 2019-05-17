@@ -2930,6 +2930,21 @@ a.toggle {
         width: 400px;
     }
 
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-right .container {
+        padding: 0 50px;
+    }
+
+    .footer-left {
+        background-image: url('../images/backgrounds/footer-bg-pryamiy.jpg');
+    }
+
+    .footer-copyright {
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {
