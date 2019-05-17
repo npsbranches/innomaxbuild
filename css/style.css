@@ -3115,6 +3115,10 @@ a.toggle {
 }
 
 @media screen and (max-width: 768px) {
+
+    .section-title-right div {
+        width: 50px;
+    }
     .about-background {
         right: -200px;
     }
@@ -3289,10 +3293,14 @@ a.toggle {
 
     .footer-left {
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .section-title-right div {
+        width: 50px;
+    }
     .section-title-right {
         font-size: 16px !important;
     }
