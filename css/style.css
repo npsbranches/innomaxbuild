@@ -3011,7 +3011,13 @@ a.toggle {
 }
 
 @media screen and (max-width: 992px) {
+    .header-page {
+        display: none;
+    }
 
+    .catalog-hero {
+        margin-top: 70px;
+    }
     .header-fixed .header-menu ul {
         display: none;
     }
