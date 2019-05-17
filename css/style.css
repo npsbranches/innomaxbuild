@@ -3290,12 +3290,13 @@ a.toggle {
     }
     .single-product-header {
         flex-direction: column;
+        margin: 0;
     }
 
     .single-product-photos {
         min-width: 100%;
         max-width: 100%;
-        margin: 0;
+        
         border: none;
     }
 }
