@@ -3236,7 +3236,12 @@ a.toggle {
         margin: 20px 0;
     }
 
-
+    .showcase-text-company {
+       font-size: 175px;
+        
+        top: 22px;
+     
+    }
 
     .advantages .section-title-right {
         margin-bottom: 50px;
@@ -3335,6 +3340,14 @@ a.toggle {
 
     .advantages .title-with-background {
         padding: 10px 30px;
+    }
+
+    .categories-showcase .title-with-background {
+            padding: 15px 30px; 
+    }
+
+    .categories-showcase .title-with-background-wrapper:after {
+        height: 50px;
     }
 }
 
@@ -3483,5 +3496,19 @@ a.toggle {
     .about-round-card:nth-of-type(5) {
         left: -15px;
         top: 38px;
+    }
+
+    .categories-showcase .title-with-background h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .categories-showcase .title-with-background h3 {
+        font-size: 16px;
+    }
+    .showcase-text-company {
+        font-size: 143px;
+        top: 26px;
     }
 }
