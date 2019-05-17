@@ -1217,7 +1217,8 @@ iframe {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .advantages-card {
@@ -2932,7 +2933,10 @@ a.toggle {
     }
 
     .footer {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         position: relative;
     }
 
@@ -2943,16 +2947,21 @@ a.toggle {
     .footer-right {
         padding-bottom: 50px;
     }
+
     .footer-left {
         position: static;
     }
+
     .footer-left {
         background-image: url('../images/backgrounds/footer-bg-pryamiy.jpg');
     }
 
     .footer-copyright {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
+
     .footer-left-menu ul li:first-of-type a {
         margin-top: 0;
     }
@@ -2964,7 +2973,10 @@ a.toggle {
     }
 
     .showcase-cards {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .showcase-card {
@@ -3111,8 +3123,12 @@ a.toggle {
     }
 
     .feedback {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
+
     .goods-showcase .title-with-background-wrapper {
         -webkit-transform: translateX(-40px);
         -ms-transform: translateX(-40px);
@@ -3132,6 +3148,7 @@ a.toggle {
     .section-title-right div {
         width: 50px;
     }
+
     .about-background {
         right: -200px;
     }
@@ -3141,7 +3158,8 @@ a.toggle {
     }
 
     .about-numbers {
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
         height: auto;
         padding: 30px 0;
         position: relative;
@@ -3160,7 +3178,8 @@ a.toggle {
     }
 
     .advantages-card {
-        flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     }
 
 
@@ -3192,7 +3211,8 @@ a.toggle {
 
     .about-round-card img {
         width: 40px;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
 
     }
 
@@ -3236,12 +3256,18 @@ a.toggle {
 
     .about-logo img {
         width: 100%;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
 
     .counter {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .counter-card {
@@ -3249,33 +3275,42 @@ a.toggle {
     }
 
     .showcase-text-company {
-       font-size: 175px;
-        
+        font-size: 175px;
+
         top: 22px;
-     
+
     }
 
     .advantages .section-title-right {
         margin-bottom: 50px;
     }
+
     /* .advantages .section-title-right {
         margin-bottom: 50px;
     } */
 
     .advantages-card {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-bottom: 0;
     }
 
     .feedback-right .container {
         padding-left: 15px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
     .footer-left .container {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
@@ -3285,8 +3320,13 @@ a.toggle {
     }
 
     .footer-right .container {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
@@ -3296,18 +3336,26 @@ a.toggle {
     }
 
     .footer-right .row {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .footer-contacts {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-top: 0;
     }
 
     .footer-address {
         text-align: center;
     }
+
     .footer-search {
         margin-right: 0;
     }
@@ -3322,9 +3370,11 @@ a.toggle {
     .section-title-right div {
         width: 50px;
     }
+
     .section-title-right {
         font-size: 16px !important;
     }
+
     .feedback-right .section-title-right {
         font-size: 16px !important;
     }
@@ -3357,13 +3407,14 @@ a.toggle {
         padding: 10px 30px;
     }
 
-       .title-with-background {
-            padding: 15px 30px; 
+    .title-with-background {
+        padding: 15px 30px;
     }
 
     .title-with-background-wrapper:after {
         height: 50px;
     }
+
     /* .categories-showcase .title-with-background {
             padding: 15px 30px; 
     }
@@ -3477,7 +3528,8 @@ a.toggle {
 
     .about-round-card img {
         width: 30px;
-        object-fit: contain;
+        -o-object-fit: contain;
+           object-fit: contain;
     }
 
     .about-round-card h4 {
@@ -3523,6 +3575,7 @@ a.toggle {
     .title-with-background h3 {
         font-size: 20px;
     }
+
     /* .categories-showcase .title-with-background h3 {
         font-size: 20px;
     } */
@@ -3532,6 +3585,7 @@ a.toggle {
     .title-with-background h3 {
         font-size: 16px;
     }
+
     /* .categories-showcase .title-with-background h3 {
         font-size: 16px;
     } */
