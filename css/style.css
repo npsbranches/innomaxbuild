@@ -1222,7 +1222,7 @@ iframe {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
 .advantages-card {
@@ -2943,8 +2943,8 @@ a.toggle {
     .footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         position: relative;
     }
 
@@ -2966,8 +2966,8 @@ a.toggle {
 
     .footer-copyright {
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .footer-left-menu ul li:first-of-type a {
@@ -2983,8 +2983,8 @@ a.toggle {
     .showcase-cards {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .showcase-card {
@@ -3023,6 +3023,7 @@ a.toggle {
     .news {
         margin-top: 70px;
     }
+
     .header-page {
         display: none;
     }
@@ -3030,6 +3031,7 @@ a.toggle {
     .catalog-hero {
         margin-top: 70px;
     }
+
     .header-fixed .header-menu ul {
         display: none;
     }
@@ -3143,8 +3145,8 @@ a.toggle {
     .feedback {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .goods-showcase .title-with-background-wrapper {
@@ -3158,7 +3160,7 @@ a.toggle {
     .goods-showcase .showcase-cards:first-of-type {
         margin-top: 130px;
     }
-    
+
     .catalog-sidebar {
         position: absolute;
         background: #fff;
@@ -3190,19 +3192,32 @@ a.toggle {
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .catalog-content.single {
         margin-left: 0;
     }
 
+
+    .contacts {
+        margin-top: 70px;
+    }
+
+    .contacts .container {
+        flex-direction: column;
+    }
+
+    .contacts-right {
+        margin-top: 50px;
+        padding: 0;
+        height: 400px;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
-
     .section-title-right div {
         width: 50px;
     }
@@ -3217,7 +3232,7 @@ a.toggle {
 
     .about-numbers {
         -webkit-clip-path: none;
-                clip-path: none;
+        clip-path: none;
         height: auto;
         padding: 30px 0;
         position: relative;
@@ -3237,7 +3252,7 @@ a.toggle {
 
     .advantages-card {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
+        flex-basis: 50%;
     }
 
 
@@ -3255,13 +3270,13 @@ a.toggle {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .product-info dt {
         white-space: normal;
     }
-    
+
     .product-info dt,
     .product-info dd {
         font-size: 14px;
@@ -3277,11 +3292,11 @@ a.toggle {
     .product {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -3319,7 +3334,7 @@ a.toggle {
     .about-round-card img {
         width: 40px;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
 
     }
 
@@ -3364,17 +3379,17 @@ a.toggle {
     .about-logo img {
         width: 100%;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
     }
 
     .counter {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .counter-card {
@@ -3398,26 +3413,26 @@ a.toggle {
 
     .advantages-card {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
         margin-bottom: 0;
     }
 
     .feedback-right .container {
         padding-left: 15px;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         text-align: center;
     }
 
     .footer-left .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -3429,11 +3444,11 @@ a.toggle {
     .footer-right .container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -3445,17 +3460,17 @@ a.toggle {
     .footer-right .row {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .footer-contacts {
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         margin-top: 0;
     }
 
@@ -3470,6 +3485,10 @@ a.toggle {
     .footer-left {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .contacts .showcase-text-company {
+        bottom: -19px;
     }
 }
 
@@ -3646,7 +3665,7 @@ a.toggle {
     .about-round-card img {
         width: 30px;
         -o-object-fit: contain;
-           object-fit: contain;
+        object-fit: contain;
     }
 
     .about-round-card h4 {
