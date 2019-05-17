@@ -3019,6 +3019,10 @@ a.toggle {
 }
 
 @media screen and (max-width: 992px) {
+
+    .news {
+        margin-top: 70px;
+    }
     .header-page {
         display: none;
     }
