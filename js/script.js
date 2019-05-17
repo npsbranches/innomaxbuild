@@ -205,6 +205,6 @@ $(function(){
         console.log('No image found, go to the next/prev');
         console.log(e);
     });
-})
+});
 
 })
