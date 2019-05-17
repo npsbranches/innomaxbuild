@@ -3113,7 +3113,19 @@ a.toggle {
     .feedback {
         flex-direction: column;
     }
+    .goods-showcase .title-with-background-wrapper {
+        -webkit-transform: translateX(-40px);
+        -ms-transform: translateX(-40px);
+        transform: translateX(-40px);
+        position: absolute;
+        top: 50px;
+    }
+
+    .goods-showcase .showcase-cards:first-of-type {
+        margin-top: 130px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -3246,6 +3258,9 @@ a.toggle {
     .advantages .section-title-right {
         margin-bottom: 50px;
     }
+    /* .advantages .section-title-right {
+        margin-bottom: 50px;
+    } */
 
     .advantages-card {
         flex-basis: 100%;
@@ -3342,13 +3357,20 @@ a.toggle {
         padding: 10px 30px;
     }
 
-    .categories-showcase .title-with-background {
+       .title-with-background {
+            padding: 15px 30px; 
+    }
+
+    .title-with-background-wrapper:after {
+        height: 50px;
+    }
+    /* .categories-showcase .title-with-background {
             padding: 15px 30px; 
     }
 
     .categories-showcase .title-with-background-wrapper:after {
         height: 50px;
-    }
+    } */
 }
 
 @media screen and (max-width: 480px) {
@@ -3498,15 +3520,21 @@ a.toggle {
         top: 38px;
     }
 
-    .categories-showcase .title-with-background h3 {
+    .title-with-background h3 {
         font-size: 20px;
     }
+    /* .categories-showcase .title-with-background h3 {
+        font-size: 20px;
+    } */
 }
 
 @media screen and (max-width: 375px) {
-    .categories-showcase .title-with-background h3 {
+    .title-with-background h3 {
         font-size: 16px;
     }
+    /* .categories-showcase .title-with-background h3 {
+        font-size: 16px;
+    } */
     .showcase-text-company {
         font-size: 143px;
         top: 26px;
