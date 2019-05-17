@@ -926,11 +926,6 @@ iframe {
     background: #fff;
 }
 
-
-
-
-
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * ABOUT * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .gray-line {
@@ -1003,7 +998,6 @@ iframe {
     min-width: 165px;
     max-width: 165px;
     height: 165px;
-    /* background-color: #f0f0f0; */
     border-radius: 50%;
     text-align: center;
     padding: 10px;
@@ -1035,8 +1029,6 @@ iframe {
     min-width: 500px;
     max-width: 500px;
     height: 500px;
-    /* border: 3px solid #ef3541;
-    border-radius: 50%; */
     margin: auto;
     position: absolute;
     left: 0;
@@ -1153,7 +1145,6 @@ iframe {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* padding-top: 40px; */
 }
 
 .counter-card {
@@ -1207,7 +1198,6 @@ iframe {
     z-index: 2;
 }
 
-
 .advantages .title-with-background {
     padding-right: 150px;
 }
@@ -1236,11 +1226,9 @@ iframe {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* justify-content: center; */
     text-align: center;
     margin: 50px 0;
     padding: 0 25px;
-    /* padding-bottom: 0; */
     -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     height: 200px;
@@ -1439,7 +1427,6 @@ iframe {
     width: 600px;
     height: 50px;
     position: absolute;
-
     background: #f2f0f0;
 }
 
@@ -1491,7 +1478,6 @@ iframe {
 
 .goods-showcase .showcase-card-title {
     height: 90px;
-
 }
 
 .goods-showcase .showcase-cards:first-of-type {
@@ -1611,7 +1597,6 @@ iframe {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    /* align-items: center; */
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1694,7 +1679,6 @@ iframe {
     margin: 7px 0;
 }
 
-
 .feedback-right-card * {
     color: #fff;
 }
@@ -1706,27 +1690,6 @@ iframe {
 .feedback-right-card span:nth-of-type(2) {
     font-size: 22px;
 }
-
-
-/* .feedback-right:after {
-    width: 150px;
-    height: 50px;
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
-    right: 50px;
-    bottom: -20px;
-}
-
-.feedback-right:before {
-    width: 150px;
-    height: 50px;
-    content: '';
-    position: absolute;
-    background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
-    left: -30px;
-    bottom: 30px;
-} */
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * PARTNERS * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -1773,7 +1736,6 @@ iframe {
     -o-transition: 0.1s;
     transition: 0.1s;
 }
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -1830,7 +1792,6 @@ iframe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* justify-content: flex-end; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2019,7 +1980,8 @@ iframe {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .breadcrumbs li {
@@ -2164,10 +2126,6 @@ iframe {
     border-bottom: 1px solid #e4e4e4;
 }
 
-a.toggle {
-    /* background: #f7f7f7 !important; */
-}
-
 .menu-item-has-children i.rotate {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -2214,18 +2172,12 @@ a.toggle {
 }
 
 .catalog-red-header {
-
     background-image: -webkit-gradient(linear, left top, right top, from(#a31d26), color-stop(#b2222c), color-stop(#c12731), color-stop(#d02c37), to(#e0313d));
-
     background-image: -webkit-linear-gradient(left, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
-
     background-image: -o-linear-gradient(left, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
-
     background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
-
     height: 45px;
     width: 100%;
-
 }
 
 .catalog-products {
@@ -2345,7 +2297,6 @@ a.toggle {
     margin-top: 50px;
 }
 
-
 .catalog-product-info span {
     font-weight: 800;
     font-size: 14px;
@@ -2356,6 +2307,7 @@ a.toggle {
     flex-basis: 100%;
     background-image: -webkit-linear-gradient(left, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
     background-image: -o-linear-gradient(left, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
+    background-image: -webkit-gradient(linear, left top, right top, from(#a31d26), color-stop(#b2222c), color-stop(#c12731), color-stop(#d02c37), to(#e0313d));
     background-image: linear-gradient(to right, #a31d26, #b2222c, #c12731, #d02c37, #e0313d);
     width: 100%;
     padding: 15px;
@@ -2472,7 +2424,6 @@ a.toggle {
 .contacts-left-contacts {
     margin-top: 80px;
 }
-
 
 .contacts-left-contacts h3 {
     font-size: 24px;
@@ -2859,9 +2810,7 @@ a.toggle {
         padding-bottom: 3px;
     }
 
-
     .text-logo {
-
         font-size: 24px;
     }
 
@@ -2906,7 +2855,6 @@ a.toggle {
 
 
 @media screen and (max-width: 1180px) {
-
     .counter {
         padding-bottom: 50px;
     }
@@ -2920,14 +2868,6 @@ a.toggle {
 }
 
 @media screen and (max-width: 1130px) {
-    /* .header-fixed .header-menu ul {
-        display: none;
-    }
-
-    .header-fixed .header-search form {
-        display: none;
-    } */
-
     .header-fixed .header-left {
         font-size: 65%;
     }
@@ -3021,7 +2961,6 @@ a.toggle {
 }
 
 @media screen and (max-width: 992px) {
-
     .news {
         margin-top: 70px;
     }
@@ -3208,7 +3147,10 @@ a.toggle {
     }
 
     .contacts .container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .contacts-right {
@@ -3289,7 +3231,10 @@ a.toggle {
         display: none;
     }
     .single-product-header {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin: 0;
         border: none;
     }
@@ -3347,7 +3292,6 @@ a.toggle {
         width: 40px;
         -o-object-fit: contain;
         object-fit: contain;
-
     }
 
     .about-round-card h4 {
@@ -3418,10 +3362,6 @@ a.toggle {
     .advantages .section-title-right {
         margin-bottom: 50px;
     }
-
-    /* .advantages .section-title-right {
-        margin-bottom: 50px;
-    } */
 
     .advantages-card {
         -ms-flex-preferred-size: 100%;
@@ -3502,8 +3442,6 @@ a.toggle {
     .contacts .showcase-text-company {
         bottom: -19px;
     }
-
-    
 }
 
 @media screen and (max-width: 576px) {
