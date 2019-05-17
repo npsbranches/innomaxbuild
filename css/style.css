@@ -1464,8 +1464,6 @@ iframe {
     background-size: 100%;
     background-position: center top;
     background-repeat: no-repeat;
-    height: 1000px;
-
 }
 
 .goods-showcase .title-with-background-wrapper:after {
@@ -3079,7 +3077,6 @@ a.toggle {
     }
 
     .advantages {
-        margin-top: 0;
         padding-top: 70px;
     }
 
@@ -3125,6 +3122,11 @@ a.toggle {
 
     .advantages-card {
         flex-basis: 50%;
+    }
+
+    
+    .advantages {
+        margin-top: 0;
     }
 }
 
