@@ -2019,6 +2019,7 @@ iframe {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs li {
@@ -2034,6 +2035,7 @@ iframe {
     text-align: center;
     position: relative;
     border-radius: 2px;
+    margin: 5px 0;
 }
 
 .breadcrumbs li:first-child {
@@ -3490,6 +3492,8 @@ a.toggle {
     .contacts .showcase-text-company {
         bottom: -19px;
     }
+
+    
 }
 
 @media screen and (max-width: 576px) {
