@@ -16,10 +16,10 @@ if (window.innerWidth < 576) {
  */
 
 
-// window.onload = function() {
-//     $('.preloader').fadeOut();
-//     $('body').addClass('overflow');
-// }
+window.onload = function() {
+    $('.preloader').fadeOut();
+    $('body').addClass('overflow');
+}
 
 $('.btn-bars').click(function () {
     $('.btn-bars').toggleClass('active');
@@ -27,10 +27,15 @@ $('.btn-bars').click(function () {
     $('body').toggleClass('overflow-hidden');
 });
 
-$(document).ready(function( ) {
-    $('.preloader').fadeOut();
-    $('body').addClass('overflow');
-})
+// $(document).ready(function( ) {
+//     $('.preloader').fadeOut();
+//     $('body').addClass('overflow');
+// })
+
+// $(window).load(function() {
+//     $('.preloader').fadeOut();
+//     $('body').addClass('overflow');
+//   });
 
 $(window).scroll(function () {
     var the_top = $(document).scrollTop();
