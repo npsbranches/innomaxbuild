@@ -95,7 +95,7 @@ if ($(".about-numbers").length) {
 $('.clients-slider').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    nav:false,
     autoplay: true,
     autoplayTimeout: 3000,
     responsive:{

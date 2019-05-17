@@ -1492,7 +1492,6 @@ iframe {
     margin-top: 100px;
 }
 
-
 .goods-showcase .showcase-card-title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1519,7 +1518,6 @@ iframe {
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
-
 }
 
 .clients-slider .owl-item:hover img {
@@ -1596,10 +1594,7 @@ iframe {
 .feedback-right .container {
     padding: 100px 15px;
     max-width: 500px;
-
 }
-
-
 
 .feedback-right .container {
     top: 0;
@@ -1629,12 +1624,9 @@ iframe {
     font-size: 20px !important;
 }
 
-
 .feedback-right .section-title-right div {
     background: #fff;
 }
-
-
 
 .feedback h3 {
     font-size: 36px;
@@ -3087,8 +3079,13 @@ a.toggle {
     .advantages .title-with-background h3 {
         font-size: 20px;
     }
+
     .advantages .title-with-background {
         padding-right: 60px;
+    }
+
+    .feedback {
+        flex-direction: column;
     }
 }
 
@@ -3124,7 +3121,7 @@ a.toggle {
         flex-basis: 50%;
     }
 
-    
+
     .advantages {
         margin-top: 0;
     }
@@ -3214,9 +3211,16 @@ a.toggle {
     .advantages .section-title-right {
         margin-bottom: 50px;
     }
+
     .advantages-card {
         flex-basis: 100%;
         margin-bottom: 0;
+    }
+
+    .feedback-right .container {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -3239,6 +3243,7 @@ a.toggle {
         max-width: 400px;
         height: 400px;
     }
+
     .advantages .title-with-background h3 {
         font-size: 16px;
     }
