@@ -2033,6 +2033,7 @@ iframe {
     display: inline-block;
     text-align: center;
     position: relative;
+    border-radius: 2px;
 }
 
 .breadcrumbs li:first-child {
@@ -2046,7 +2047,7 @@ iframe {
     position: absolute;
     border: 15px solid transparent;
     border-left: 20px solid #e0313d;
-    right: -35px;
+    right: -34px;
     top: 0;
     z-index: 50;
 }
