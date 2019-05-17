@@ -3291,13 +3291,12 @@ a.toggle {
     .single-product-header {
         flex-direction: column;
         margin: 0;
+        border: none;
     }
 
     .single-product-photos {
         min-width: 100%;
         max-width: 100%;
-        
-        border: none;
     }
 }
 
@@ -3508,6 +3507,13 @@ a.toggle {
 }
 
 @media screen and (max-width: 576px) {
+    .showcase-card-description {
+        width: 100%;
+        left: 0;
+    }
+    .goods-showcase .title-with-background{
+        padding-left: 60px;
+    }
     .section-title-right div {
         width: 50px;
     }
