@@ -2932,18 +2932,28 @@ a.toggle {
 
     .footer {
         flex-direction: column;
+        position: relative;
     }
 
     .footer-right .container {
         padding: 0 50px;
     }
 
+    .footer-right {
+        padding-bottom: 50px;
+    }
+    .footer-left {
+        position: static;
+    }
     .footer-left {
         background-image: url('../images/backgrounds/footer-bg-pryamiy.jpg');
     }
 
     .footer-copyright {
         align-items: center;
+    }
+    .footer-left-menu ul li:first-of-type a {
+        margin-top: 0;
     }
 }
 
@@ -3235,6 +3245,41 @@ a.toggle {
     .feedback-right .container {
         padding-left: 15px;
         align-items: center;
+        text-align: center;
+    }
+
+    .footer-left .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left-menu {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .footer-right .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-right-menu {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-right .row {
+        flex-direction: column;
+    }
+
+    .footer-contacts {
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .footer-address {
         text-align: center;
     }
 }
