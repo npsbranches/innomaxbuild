@@ -20,7 +20,6 @@ $('.btn-bars').click(function () {
 });
 
 
-
 if (window.innerWidth < 576) {
 
     function removeAos() {
