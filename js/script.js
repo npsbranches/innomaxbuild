@@ -15,11 +15,16 @@ if (window.innerWidth < 576) {
  **  Прелоадер
  */
 
-
-window.onload = function() {
-    $('.preloader').fadeOut();
+$(document).ready(function () {
+    $('.preloader').delay(400).fadeOut(500);
     $('body').addClass('overflow');
-}
+  })
+
+
+// window.onload = function() {
+//     $('.preloader').fadeOut();
+//     $('body').addClass('overflow');
+// }
 
 $('.btn-bars').click(function () {
     $('.btn-bars').toggleClass('active');
