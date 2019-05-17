@@ -109,7 +109,16 @@ $('.clients-slider').owlCarousel({
             items:4
         }
     }
-})
+});
+
+$('.catalog-button').click(function () {
+    $('.catalog-sidebar').toggleClass('open');
+    $('.sidebar-layout').toggleClass('visible');
+});
+$('.sidebar-layout').click(function () {
+    $('.catalog-sidebar').toggleClass('open');
+    $('.sidebar-layout').toggleClass('visible');
+});
 
 $(".header-infoblock-menu").on("click", "a", function (event) {
     event.preventDefault();
