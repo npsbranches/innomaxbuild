@@ -1,0 +1,219 @@
+.education {
+    padding-top: 100px;
+
+}
+
+.education-text {
+    background: #eeeeee;
+    padding: 50px 0;
+}
+
+.education .breadcrumbs {
+    margin-bottom: 50px;
+}
+
+.red-logo-text {
+    color: #c92934;
+    font-weight: 900;
+}
+
+.education-text p {
+    font-size: 20px;
+}
+
+.education-text b {
+    font-weight: 900;
+}
+
+.education-big-logo .container {
+    padding: 50px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-big-logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.education-icon-cards {
+    padding: 50px 0;
+}
+
+.education-icon-cards .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.education-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+    flex-basis: 20%;
+}
+
+.education-icon-card h3 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.education-icon-card-cover {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-icon-card-cover img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.education-advantages {
+    background: #eeeeee;
+    padding: 50px 0;
+}
+
+.education-advantages h2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.education-advantages ul li {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.edu-section {
+    background: #eeeeee;
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+.edu-section-righted h2 {
+    text-align: right;
+}
+
+.edu-section-righted .edu-section-parties {
+    flex-direction: row-reverse;
+}
+
+.edu-section h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.edu-section-parties {
+    display: flex;
+}
+
+.edu-section-left {
+    width: 50%;
+    background: #202628;
+    padding: 50px;
+}
+
+.edu-section-left * {
+    color: #fff;
+}
+
+.edu-section-left h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.edu-section ul li {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 0;
+}
+
+.edu-section-right {
+    width: 50%;
+}
+
+.edu-section-right img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .edu-section-parties {
+        flex-direction: column;
+    }
+
+    .edu-section-left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .edu-section-right {
+        width: 100%;
+    }
+
+    .edu-section-righted .edu-section-parties {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .edu-section-parties {
+        flex-direction: column;
+    }
+
+    .edu-section-left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .edu-section-right {
+        width: 100%;
+    }
+
+    .edu-section-righted .edu-section-parties {
+        flex-direction: column;
+    }
+
+    .education-icon-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 15px;
+        flex-basis: 50%;
+    }
+
+    .edu-section h2 {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    
+    .edu-section-left h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .education-icon-card {
+        flex-basis: 100%;
+        padding: 30px;
+    }
+    .education-text p {
+        font-size: 16px;;
+    }
+    
+}
