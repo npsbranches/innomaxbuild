@@ -200,7 +200,7 @@
         font-weight: 900;
         margin-bottom: 20px;
     }
-    
+
     .edu-section-left h3 {
         font-size: 20px;
     }
@@ -212,8 +212,10 @@
         flex-basis: 100%;
         padding: 30px;
     }
+
     .education-text p {
-        font-size: 16px;;
+        font-size: 16px;
+        ;
     }
-    
+
 }
